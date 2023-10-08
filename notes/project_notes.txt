@@ -1,0 +1,10 @@
+# This is a universial notes file for the steps in my project to . . .
+# 1) Create a python django project
+# 2) Create an html webpage with static files in that project
+# 3) Run a development server to edit the project
+# 4) Save the project to a GitHub Repository
+# 5) Run a Ubuntu Virtual Machine on an Amazon EC2 instance
+# 6) Install Apache2, mod_wsgi, and certbot on the VM
+# 7) Configure the Apache2 webserver and the django settings to allow https traffic with 
+#	SSL certificates from certbot and connect to a customdomain name.
+
