@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dan Wavle -- Cover Letter</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Cover Letter for Dan Wavle."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentDateElement = document.getElementById('currentDate');
+        const currentDate = new Date();
+
+        // Create an array of month names for formatting
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        // Get the day, month, and year
+        const day = currentDate.getDate();
+        const month = currentDate.getMonth();
+        const year = currentDate.getFullYear();
+
+        // Create a formatted date string
+        const formattedDate = `${months[month]} ${day}${getDaySuffix(day)}, ${year}`;
+
+        currentDateElement.textContent = formattedDate;
+    });
+
+    // Function to get the appropriate day suffix (e.g., 1st, 2nd, 3rd)
+    function getDaySuffix(day) {
+        if (day >= 11 && day <= 13) {
+            return 'th';
+        }
+        switch (day % 10) {
+            case 1:
+                return 'st';
+            case 2:
+                return 'nd';
+            case 3:
+                return 'rd';
+            default:
+                return 'th';
+        }
+    }
+</script>
+
+<body id="top">
+<div class="coverLetter">
+        <div id="letterDetails">
+               <h1> Dan Wavle</h1>
+                <h2>Programmer/Web Developer</h2>
+                <ul>
+                        <li><a href="mailto:dcwavle@gmail.com">dcwavle@gmail.com</a></li>
+                        <li>(607) 423-1948</li>
+                        <li>1651 Hedden Park<br>New Albany, IN 47150</li>
+                        <li><a href="https://www.danwavle.com">www.danwavle.com</a></li>
+                </ul>
+        </div>
+        <div id="vl"></div>
+	<div id="hl"></div>
+        <div id="letterBody">
+		<p id="currentDate">October 5, 2023</p>
+		<p></p>
+                <p>To whom it may concern,</p>
+                <p>I began my higher education in Astronomy and Physics at Indiana University Bloomington, and as a Cox Research Scholar, I was engaged in scientific research and analysis.  My affinity for computer code and Linux operating systems began as early Freshman year, when I utilized astronomical image processing software written in Fortran and C in my role as a research assistant.  Through the rest of my college career, I completed coursework in higher Mathematics, including vector calculus and differential equations, and also pursued coursework in the History and Philosophy of Science.   Along with my work in science, mathematics and philosophy, I fostered a proclivity for writing code that deepened with my coursework in Data Science during graduate school at the University of Illinois.</p>
+                <p>As an educator, computer programming retained its constant role in my career.  During my time in the Math Department at Floyd Central High School, I developed projects that guided students to explore mathematics through the use of free and powerful computing resources in Python.  I led professional development for teachers focused on utilizing Python programming in the Math classroom, thereby teaching our usual state-required math standards while also imparting students with modern and effective skills.  While in the Science Department, I further lead professional development for teachers centered on using generative AI models like ChatGPT as productivity tools for the creation of course material.  When I assumed leadership of the Computer Science Department, I developed an introductory programming course that introduced students to basic syntax and eventually led them to create and customize their own arcade game.  I also implemented the rigorous course syllabus for Advanced Placement Computer Science A and pioneered the adoption and development of an advanced Software Development course in which my students and I explored various tools for the development and deployment of web applications.  The success of my courses and the ensuing rise in popularity of computer science at Floyd Central was gratifying.</p>
+                <p>In summer 2023, I was given the opportunity to act as the lead programmer for an online simulation project through the Industrial Engineering Department at the University of Louisville.  While my proficiency and enjoyment of writing computer code has always been apparent to me, my work and success in that role validated for me that writing and developing computer code should be the focus of my career, and it served as the catalyst for my current pursuit of that objective.  My scientific and academic background has equipped me with a diverse set of technical skills centered around mathematics and programming.  In addition, my career has afforded me continual opportunities to both refine and exhibit my skills in communication and professionalism, from presenting research at conferences to leading professional training for my colleagues in Education.  I am now driven by the certainty that a job in programming will be the next stage of my life, the confidence in my ability to manifest that reality, and the excitement to discover where that pursuit leads me.</p>
+                <p>Thank you for your consideration,</p>
+                <p>Sincerely,<br>Daniel C. Wavle</p>
+        </div>
+</div>
+</body>
+</html>
+
