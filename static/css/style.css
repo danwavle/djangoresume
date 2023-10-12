@@ -391,9 +391,64 @@ ul.bullet li {
 }
 
 @media print {
-    #cv {
-        width: 100%;
-    }
+        	#cv {
+			width: 100%;
+			margin: 0;
+		}
+
+		.mainDetails {
+			padding: 15px 25px;
+		}
+
+		#mainArea {
+			padding: 0 20px;
+		}
+
+		section{
+			padding: 10px 0 0;
+		}
+
+		section:last-child {
+			padding: 10px 0 10px;
+		}
+
+		
+   		
+		body, p {
+			font-size: 12px;
+		}
+	
+		#name h1 {
+			font-size: 2em;
+		}
+
+		#name h2 {
+			font-size: 1.7em;
+		}
+	
+		#name h3 {
+			display: none;
+		}
+
+
+		section {
+			page-break-inside: always;
+			page-break-before: avoid;
+			page-break-after: avoid;
+		}
+
+		body {
+		}
+
+		#headshot {
+			display: block;
+		}
+
+		.keySkills {
+			column-count: 3;
+		}
+
+
 }
 
 @-webkit-keyframes reset {
